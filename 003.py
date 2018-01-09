@@ -1,9 +1,8 @@
-
-"""Problem 3 - Largest prime factor
-
-Find the largest prime factor of 600851475143.
-
-"""
+#
+# Problem 3 - Largest prime factor
+#
+# Find the largest prime factor of 600851475143.
+#
 
 
 def lowest_prime_factor(n):

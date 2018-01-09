@@ -1,9 +1,8 @@
-
-"""Problem 2 - Even Fibonacci numbers
-
-Find the sum of the even valued Fibonacci numbers not exceeding four million.
-
-"""
+#
+# Problem 2 - Even Fibonacci numbers
+#
+# Find the sum of the even valued Fibonacci numbers not exceeding four million.
+#
 
 
 def fibonacci_sequence(maximum):
