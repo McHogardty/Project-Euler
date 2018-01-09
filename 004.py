@@ -18,14 +18,11 @@ def is_palindrome(n):
 
 
 def main():
-    numbers = [x * y for x, y in
-               itertools.product(range(100, 1000), range(100, 1000))]
-    numbers.sort(reverse=True)
+    palindromes = [x * y for x, y in
+                   itertools.product(range(100, 1000), range(100, 1000))
+                   if is_palindrome(x * y)]
 
-    for n in numbers:
-        if is_palindrome(n):
-            print(n)
-            return
+    print(max(palindromes))
 
 
 if __name__ == "__main__":
