@@ -13,7 +13,7 @@ def is_palindrome(n):
 
     n = str(n)
 
-    return not any(n[i] != n[len(n) - i - 1] for i in range(len(n) // 2))
+    return all(n[i] == n[len(n) - i - 1] for i in range(len(n) // 2))
 
 
 def main():
