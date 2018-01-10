@@ -41,36 +41,19 @@ def main():
     # products in each position.
     for m, row in enumerate(grid):
         for n, num in enumerate(row):
-            # print("{0}, {1}".format(m, n))
-            # up
-            if m > 2:
-                sequences.append([grid[m - i][n] for i in range(4)])
-
-            # down
+            # down = up
             if m < len(grid) - 3:
                 sequences.append([grid[m + i][n] for i in range(4)])
 
-            # left
+            # left = right
             if n > 2:
                 sequences.append(row[n - 3: n + 1])
 
-            # right
-            if n < len(row) - 3:
-                sequences.append(row[n: n + 4])
-
-            # diagonal up left
-            if m > 2 and n > 2:
-                sequences.append([grid[m - i][n - i] for i in range(4)])
-
-            # diagonal up right:
-            if m > 2 and n < len(row) - 3:
-                sequences.append([grid[m - i][n + i] for i in range(4)])
-
-            # diagonal down left
+            # diagonal down left = diagnoal up right
             if m < len(grid) - 3 and n > 2:
                 sequences.append([grid[m + i][n - i] for i in range(4)])
 
-            # diagonal down right
+            # diagonal down right = diagonal up left
             if m < len(grid) - 3 and n < len(row) - 3:
                 sequences.append([grid[m + i][n + i] for i in range(4)])
 
