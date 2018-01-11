@@ -2,8 +2,8 @@
 # Problem 22 - Names scores
 #
 # Calculate the total of all the name scores in the file data/names.txt. The
-# name score is the multiple of the position of the name in the list with the
-# sum of the alphabetical positions of the letters in the name.
+# name score is the multiple of the alphabetical position of the name in the
+# list with the sum of the alphabetical positions of the letters in the name.
 #
 
 import string
