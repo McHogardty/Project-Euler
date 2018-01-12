@@ -27,6 +27,13 @@ def divisors(n, proper=True):
     return d
 
 
+def factorial(n):
+    if n < 2:
+        return 1
+
+    return n * factorial(n - 1)
+
+
 def is_prime(n):
     """Determine whether or not n is prime."""
 
