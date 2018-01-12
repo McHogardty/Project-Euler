@@ -28,6 +28,11 @@ def divisors(n, proper=True):
 
 
 def factorial(n):
+    """Calculate n! = n * (n - 1) * (n - 2) * ... * 3 * 2 * 1. By convention,
+    1! = 1 and 0! = 1.
+
+    """
+
     if n < 2:
         return 1
 
