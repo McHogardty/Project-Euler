@@ -4,27 +4,7 @@
 # Evaluate the sum of all the amicable numbers under 10000.
 #
 
-import math
-
-
-def divisors(n, proper=True):
-    """Calculate the divisors of n."""
-
-    sqrt = math.floor(math.sqrt(n))
-    d = [1]
-
-    if not proper:
-        d.append(n)
-
-    if sqrt < 2:
-        return d
-
-    for i in range(2, sqrt + 1):
-        if n % i == 0:
-            d.append(i)
-            d.append(n // i)
-
-    return d
+from util import divisors
 
 
 def main():
