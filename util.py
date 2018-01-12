@@ -39,6 +39,20 @@ def factorial(n):
     return n * factorial(n - 1)
 
 
+def fibonacci(maximum=None):
+    """Calculate the Fibonacci sequence and return it as a generator."""
+    x = 0
+    y = 1
+
+    while True:
+        yield y
+
+        x, y = y, x + y
+
+        if maximum is not None and y > maximum:
+            return
+
+
 def is_prime(n):
     """Determine whether or not n is prime."""
 

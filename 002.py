@@ -4,19 +4,11 @@
 # Find the sum of the even valued Fibonacci numbers not exceeding four million.
 #
 
-
-def fibonacci_sequence(maximum):
-    x = 0
-    y = 1
-
-    while y < maximum:
-        yield y
-
-        x, y = y, x + y
+from util import fibonacci
 
 
 def main():
-    total = sum(x for x in fibonacci_sequence(4000000) if x % 2 == 0)
+    total = sum(x for x in fibonacci(maximum=4000000) if x % 2 == 0)
 
     print(total)
 
