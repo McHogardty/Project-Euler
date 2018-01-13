@@ -1,7 +1,7 @@
 #
 # Problem 23 - Non-abundant sums
 #
-# Find the sum of all positive intigers which cannot be written as the sum of
+# Find the sum of all positive integers which cannot be written as the sum of
 # two abundant numbers.
 #
 
