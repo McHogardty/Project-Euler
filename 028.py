@@ -17,12 +17,10 @@ def main():
     # where n = 1 is the 3 x 3 square, n = 2 is the 5 x 5 square etc.
     # So the sum of the n x n square, n odd, is P(2n - 1)
     # So the total is 1 + Sum(n = 1, n = 500)(P(n)).
+    # We can calculate the total by using well-known formulae, giving,
+    # total = 1 + 26n/3 + 10n^2 + 16n^3/3
 
-    total = 1
-    for n in range(1, 501):
-        total += (16 * n * n) + (4 * n) + 4
-
-    print(total)
+    print(1 + (26 * 500) / 3 + 10 * 500 * 500 + (16 * 500 * 500 * 500) / 3)
 
 
 if __name__ == "__main__":
