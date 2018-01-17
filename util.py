@@ -70,13 +70,7 @@ def lowest_prime_factor(n):
     if n < 2:
         return n
 
-    # We could optimise this by noting that if n has a lowest prime factor, it
-    # must be at most the square root of n, so we only consider those cases.
-    # If the factor were larger than the square root, than dividing n by that
-    # factor would produce another integer smaller than the square root, and
-    # this integer would have its own prime factors which are obviously lower
-    # than the factor we had.
-    for x in range(2, n):
+    for x in range(2, floor(sqrt(n)) + 1):
         if n % x == 0:
             # x is the smallest number to divide n, so it must be prime. If it
             # were composite, then it would have a prime factor smaller than
